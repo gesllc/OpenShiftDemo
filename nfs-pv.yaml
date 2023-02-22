@@ -4,7 +4,7 @@ metadata:
   name: nfs-pv
 spec:
   capacity:
-    storage: 2500Mi
+    storage: 250Gi
   accessModes:
     - ReadWriteMany
   storageClassName: nfs-pv
