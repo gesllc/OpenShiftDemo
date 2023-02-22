@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: nfs-pv
+spec:
+  capacity:
+    storage: 2500Mi
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-pv
+  nfs:
+    server: 10.17.20.125
+    path: "/shares/nfs-sc"
